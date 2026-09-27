@@ -1,0 +1,137 @@
+body{
+    background-color: #FBF1E4;
+    padding:0;
+    margin:0;
+}
+h1{
+    color: #4A2C2A;
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Fraunces", serif;
+    font-weight: 450;
+    margin: 30px 10px 10px 10px;
+}
+.navbar{
+    background-color: rgba(196, 154, 108, 0.55);
+    box-shadow: 0px 0px 20px 3px rgba(90, 58, 30, 0.35);
+    border-radius: 20px;
+    margin: 40px 20px;
+    font-family: "Fraunces", serif;
+}
+.navbar ul{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    margin:0;
+    padding:20px;
+    list-style-type: none;
+    gap: 15px;
+}
+.navbar a{
+    padding:10px;
+    text-decoration: none;
+    color: #4A2C2A;
+    font-size:32px;
+    display: inline-block;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    transition: 0.2s ease;
+}
+.navbar a:hover{
+    border-radius: 20px;
+    box-shadow: 0px 0px 25px 6px rgba(90, 58, 30, 0.55);
+    background-color: #F8E3C4;
+    color: #7A4B24;
+    border: 2px solid #8B5A2B;
+}
+.mainCont{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 30px;
+}
+.imageCont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(196, 154, 108, 0.55);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 3px rgba(90, 58, 30, 0.35);
+}
+.image{
+    border-radius: 20px;
+    width: 250px;
+    height: auto;
+    box-shadow: 0px 4px 14px rgba(74, 44, 42, 0.4);
+}
+.GrahamName{
+    color: #4A2C2A;
+    text-align: center;
+    font-family: "Fraunces", serif;
+    font-weight: 450;
+    font-size: 1.5rem;
+    margin: 15px 0px 0px 0px;
+}
+.about{
+    background-color: rgba(196, 154, 108, 0.55);
+    box-shadow: 0px 0px 20px 3px rgba(90, 58, 30, 0.35);
+    border-radius: 20px;
+    padding: 30px;
+    width: 60vw;
+    font-family: "Fraunces", serif;
+}
+.about h2{
+    color: #4A2C2A;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 0;
+    line-height: 1.4em;
+}
+.about p{
+    font-size: 1.1rem;
+    line-height: 1.6em;
+    color: #5C3A28;
+}
+
+@media (max-width: 1024px){
+    .mainCont{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about{
+        width: 85vw;
+    }
+}
+
+@media (max-width: 600px){
+    .navbar{
+        margin: 15px;
+    }
+    .navbar a{
+        font-size: 20px;
+        padding: 5px;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .image{
+        width: 180px;
+    }
+    .GrahamName{
+        font-size: 1.2rem;
+    }
+    .about{
+        width: 90vw;
+        padding: 15px;
+    }
+    .about h2{
+        font-size: 1.2rem;
+    }
+    .about p{
+        font-size: 0.95rem;
+    }
+}
