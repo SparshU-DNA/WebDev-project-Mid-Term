@@ -150,4 +150,7 @@ h1{
     .formCont{
         padding: 20px;
     }
+    .mainContact{
+        flex-direction : column;
+    }
 }
